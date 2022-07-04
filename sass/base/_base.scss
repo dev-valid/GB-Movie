@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+  // Equivalent to 10px 
+}
+
+body {
+  background-color: $bg-color-1;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

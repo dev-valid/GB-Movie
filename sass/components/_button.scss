@@ -1,0 +1,25 @@
+.icon-btn {
+  color: $color-white;
+  font-size: 2.5rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--small {
+    font-size: 1.6rem;
+  }
+  
+  &--bg-color-1 {
+    background-color: $bg-color-1;
+  }
+
+  &--bg-color-2 {
+    background-color: $bg-color-2;
+  }
+
+  &:hover {
+    background-color: rgba($color-white, .1);
+  }
+}

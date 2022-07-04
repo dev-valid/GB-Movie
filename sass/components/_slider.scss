@@ -1,0 +1,17 @@
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  // margin-left: 1rem;
+  width: 100%;
+}
+
+.slider-control {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  &__btn {
+    margin: 2rem;
+  }
+}
+

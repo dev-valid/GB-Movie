@@ -1,0 +1,14 @@
+.prime-link {
+  color: $color-white;
+  text-decoration: none;
+  transition: all .3s;
+
+  &--medium {
+    font-size: 1.8rem;
+  }
+
+  &:hover,
+  :active {
+    color: $bg-color-3;
+  }
+}

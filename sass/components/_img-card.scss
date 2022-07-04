@@ -1,0 +1,44 @@
+.img-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__poster {
+    display: block;
+    position: relative;
+    text-decoration: none;
+  }
+
+  &__picture {
+    width: 19rem;
+    height: 27rem;
+    border-radius: .8rem;
+
+    &:hover {
+      box-shadow: -.4rem .4rem 1.2rem .4rem rgba($color-black, 0.4);
+      transition: all 0.3s;
+    }
+  }
+
+  &__score {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $bg-color-3;
+    color: $text-color-2;
+    font-size: 1.5rem;
+    padding: .4rem 2rem;
+    border-radius: 1.5rem;
+  }
+
+  &__name {
+    margin-top: 1.5rem;
+    display: block;
+    text-align: center;
+    width: 18rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
