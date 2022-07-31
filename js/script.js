@@ -1,29 +1,73 @@
 // functionality to open and close search box
-const btn = document.getElementById("search-btn");
-const form = document.getElementById("search-form");
+const searchBtn = document.getElementById('search-btn');
+const searchForm = document.getElementById('search-form');
 
-btn.addEventListener("click", () => {
-  if (form.classList.contains("header__search-form--open")) {
-    form.classList.remove("header__search-form--open");
-    btn.classList.remove("fa-xmark");
-    btn.classList.add("fa-magnifying-glass");
+searchBtn.addEventListener('click', () => {
+  if (searchForm.classList.contains('header__search-form--open')) {
+    searchForm.classList.remove('header__search-form--open');
+    searchBtn.classList.remove('fa-xmark');
+    searchBtn.classList.add('fa-magnifying-glass');
   } else {
-    form.classList.add("header__search-form--open");
-    btn.classList.remove("fa-magnifying-glass");
-    btn.classList.add("fa-xmark");
+    searchForm.classList.add('header__search-form--open');
+    searchBtn.classList.remove('fa-magnifying-glass');
+    searchBtn.classList.add('fa-xmark');
+  }
+});
+
+// functionality to open and close side menu
+const menu = document.querySelector('.side-menu');
+const menuBtn = document.getElementById('menu-btn');
+const menuOverly = document.querySelector('.side-menu-overly');
+const body = document.querySelector('body');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.add('side-menu--show');
+  menuOverly.style.display = 'block';
+  body.style.overflow = 'hidden';
+  
+  // background fade animation 
+  let op = 0;
+  let id;
+  id = setInterval(animated,1)
+  function animated () {
+    if (op >= 0.85) {
+      clearInterval(id)
+    } else {
+      op += .01;
+      menuOverly.style.backgroundColor = `rgba(6, 6, 6, ${op})`;
+    }
+  }
+});
+
+menuOverly.addEventListener('click', () => {
+  menu.classList.remove('side-menu--show');
+  body.removeAttribute('style');
+
+  // background fade animation
+  let op = 0.85;
+  let id;
+  id = setInterval(animated,1)
+  function animated () {
+    if (op <= 0.01) {
+      clearInterval(id)
+      menuOverly.style.display = 'none';
+    } else {
+      op -= .01;
+      menuOverly.style.backgroundColor = `rgba(6, 6, 6, ${op})`;
+    }
   }
 });
 
 // niny-slider setting
 const slider1 = tns({
-  container: ".slider-1",
+  container: '.slider-1',
   mouseDrag: true,
   autoplay: true,
-  autoplayDirection: "backward",
+  autoplayDirection: 'backward',
   autoplayTimeout: 3000,
   nav: false,
   autoplayButtonOutput: false,
-  controlsContainer: "#control-1",
+  controlsContainer: '#control-1',
   responsive: {
     0: {
       items: 1,
@@ -41,14 +85,14 @@ const slider1 = tns({
 });
 
 const slider2 = tns({
-  container: ".slider-2",
+  container: '.slider-2',
   mouseDrag: true,
   autoplay: true,
-  autoplayDirection: "backward",
+  autoplayDirection: 'backward',
   autoplayTimeout: 3500,
   nav: false,
   autoplayButtonOutput: false,
-  controlsContainer: "#control-2",
+  controlsContainer: '#control-2',
   responsive: {
     0: {
       items: 1,
