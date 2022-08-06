@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="img/fav.png" />
-  <script src="https://kit.fontawesome.com/68e6190fbe.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <link rel="stylesheet" href="css/style.css" />
   <title>جی بی مووی | دانلود فیلم و سریال</title>
@@ -15,16 +14,16 @@
 <body>
   <header class="header">
     <div class="header__menu-btn-box">
-      <button id="menu-btn" class="icon-btn icon-btn--bg-color-2 fa-solid fa-bars"></button>
+      <button id="menu-btn" class="icon-btn icon-btn--bg-color-2 far fa-bars"></button>
       <a href="index.html" class="header__text">جی بی مووی</a>
     </div>
     <div class="header__search-box u-margin-small">
       <form id="search-form" class="header__search-form">
-        <button class="header__search-input-btn fa-solid fa-magnifying-glass"></button>
+        <button class="header__search-input-btn fas fa-search"></button>
         <input type="text" class="header__search-input" placeholder="جستجو کنید...">
       </form>
       <button id="search-btn"
-        class="icon-btn icon-btn--small icon-btn--bg-color-2 fa-solid fa-magnifying-glass"></button>
+        class="icon-btn icon-btn--small icon-btn--bg-color-2 fas fa-search"></button>
     </div>
   </header>
   <aside class="side-menu">
@@ -40,13 +39,16 @@
           <a href="" class="side-menu__link"><i class="fas fa-video side-menu__font-icon"></i> فیلم و سریال</a>
         </li>
         <li class="side-menu__item">
-          <a href="casts.html" class="side-menu__link"><i class="fas fa-theater-masks side-menu__font-icon"></i> هنرمندان</a>
+          <a href="casts.html" class="side-menu__link"><i class="fas fa-theater-masks side-menu__font-icon"></i>
+            هنرمندان</a>
         </li>
         <li class="side-menu__item">
-          <a href="box-office.html" class="side-menu__link"><i class="fas fa-chart-bar side-menu__font-icon"></i> باکس آفیس</a>
+          <a href="box-office.html" class="side-menu__link"><i class="fas fa-chart-bar side-menu__font-icon"></i> باکس
+            آفیس</a>
         </li>
         <li class="side-menu__item">
-          <a href="review.html" class="side-menu__link"><i class="fas fa-marker side-menu__font-icon"></i> نقد و تحلیل</a>
+          <a href="review.html" class="side-menu__link"><i class="fas fa-marker side-menu__font-icon"></i> نقد و
+            تحلیل</a>
         </li>
         <li class="side-menu__sub-header">
           <span class="side-menu__sub-header-text">ناحیه کاربری</span>
@@ -67,30 +69,32 @@
           <a href="" class="side-menu__link"><i class="fas fa-comments side-menu__font-icon"></i> درخواست فیلم/سریال</a>
         </li>
         <li class="side-menu__item">
-          <a href="contact-us.html" class="side-menu__link"><i class="fas fa-fax side-menu__font-icon"></i> ارتباط با ما</a>
+          <a href="contact-us.html" class="side-menu__link"><i class="fas fa-fax side-menu__font-icon"></i> ارتباط با
+            ما</a>
         </li>
         <li class="side-menu__item">
-          <a href="about-us.html" class="side-menu__link"><i class="fas fa-address-card side-menu__font-icon"></i> درباره ما</a>
+          <a href="about-us.html" class="side-menu__link"><i class="fas fa-address-card side-menu__font-icon"></i>
+            درباره ما</a>
         </li>
       </ul>
     </nav>
   </aside>
 
   <main>
-    <section class="slider-section">
+    <section class="section">
+      <h2 class="heading-primary section__heading">
+        <i class="fas fa-fire"></i>
+        محبوب ترین فیلم های هفته
+      </h2>
 
-        <h2 class="heading-primary slider-section__heading">
-          <i class="fa-solid fa-fire-flame-curved"></i>
-          محبوب ترین فیلم های هفته
-        </h2>
-        <ul class="slider-control" id="control-1" dir="ltr">
-          <li class="slider-control__btn">
-            <button class="fas fa-angle-left icon-btn icon-btn--bg-color-1"></button>
-          </li>
-          <li class="slider-control__btn">
-            <button class="fas fa-angle-right icon-btn icon-btn--bg-color-1"></button>
-          </li>
-        </ul>
+      <ul class="slider-control" id="control-1" dir="ltr">
+        <li class="slider-control__btn">
+          <button class="far fa-angle-left icon-btn icon-btn--bg-color-1"></button>
+        </li>
+        <li class="slider-control__btn">
+          <button class="far fa-angle-right icon-btn icon-btn--bg-color-1"></button>
+        </li>
+      </ul>
 
       <div class="slider-container" dir="ltr">
         <div class="slider-1">
@@ -100,7 +104,8 @@
                 <img src="/img/post/fast--furious-9-2021.jpg" alt="پوستر فیلم" class="img-card__picture">
                 <span class="img-card__score">5.5</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Fast & Furious 9">Fast & Furious 9</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="Fast & Furious 9">Fast & Furious
+                9</a>
             </div>
           </div>
           <div>
@@ -109,7 +114,7 @@
                 <img src="img/post/jungle-cruise-2021.jpg" alt="پوستر فیلم" class="img-card__picture">
                 <span class="img-card__score">7.1</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Jungle Cruise">Jungle Cruise</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="Jungle Cruise">Jungle Cruise</a>
             </div>
           </div>
           <div>
@@ -118,7 +123,7 @@
                 <img src="img/post/legend-2015.jpg" alt="پوستر فیلم" class="img-card__picture">
                 <span class="img-card__score">6.9</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Legend">Legend</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="Legend">Legend</a>
             </div>
           </div>
           <div>
@@ -127,7 +132,8 @@
                 <img src="img/post/the-suicide-squad-2021.jpg" alt="پوستر فیلم" class="img-card__picture">
                 <span class="img-card__score">7.9</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="The Suicide Squad">The Suicide Squad</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="The Suicide Squad">The Suicide
+                Squad</a>
             </div>
           </div>
           <div>
@@ -136,7 +142,8 @@
                 <img src="img/post/fear-street--part-two---1978-2021.jpg" alt="پوستر فیلم" class="img-card__picture">
                 <span class="img-card__score">6.8</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Fear Street: Part Two - 1978">Fear Street: Part Two - 1978</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="Fear Street: Part Two - 1978">Fear
+                Street: Part Two - 1978</a>
             </div>
           </div>
           <div>
@@ -145,27 +152,28 @@
                 <img src="img/post/the-girl-next-door-2004.jpg" alt="پوستر فیلم" class="img-card__picture">
                 <span class="img-card__score">6.7</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="The Girl Next Door">The Girl Next Door</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="The Girl Next Door">The Girl Next
+                Door</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="slider-section">
-      
-        <h2 class="heading-primary slider-section__heading">
-          <i class="fa-solid fa-fire-flame-curved"></i>
-          محبوب ترین سریال های هفته
-        </h2>
-        <ul class="slider-control" id="control-2" dir="ltr">
-          <li class="slider-control__btn">
-            <button class="fas fa-angle-left icon-btn icon-btn--bg-color-1"></button>
-          </li>
-          <li class="slider-control__btn">
-            <button class="fas fa-angle-right icon-btn icon-btn--bg-color-1"></button>
-          </li>
-        </ul>
-      
+    <section class="section">
+
+      <h2 class="heading-primary section__heading">
+        <i class="fas fa-fire"></i>
+        محبوب ترین سریال های هفته
+      </h2>
+      <ul class="slider-control" id="control-2" dir="ltr">
+        <li class="slider-control__btn">
+          <button class="far fa-angle-left icon-btn icon-btn--bg-color-1"></button>
+        </li>
+        <li class="slider-control__btn">
+          <button class="far fa-angle-right icon-btn icon-btn--bg-color-1"></button>
+        </li>
+      </ul>
+
       <div class="slider-container" dir="ltr">
         <div class="slider-2">
           <div>
@@ -174,7 +182,7 @@
                 <img src="img/post/loki-2021.jpg" alt="پوستر سریال" class="img-card__picture">
                 <span class="img-card__score">9.5</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Loki">Loki</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="Loki">Loki</a>
             </div>
           </div>
           <div>
@@ -183,7 +191,7 @@
                 <img src="img/post/evil-2019.jpg" alt="پوستر سریال" class="img-card__picture">
                 <span class="img-card__score">7.7</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Evil">Evil</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="Evil">Evil</a>
             </div>
           </div>
           <div>
@@ -192,7 +200,8 @@
                 <img src="img/post/motherland--fort-salem-2020.jpg" alt="پوستر سریال" class="img-card__picture">
                 <span class="img-card__score">7.2</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Motherland: Fort Salem">Motherland: Fort Salem</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium"
+                title="Motherland: Fort Salem">Motherland: Fort Salem</a>
             </div>
           </div>
           <div>
@@ -201,7 +210,7 @@
                 <img src="img/post/greys-anatomy-2005.jpg" alt="پوستر سریال" class="img-card__picture">
                 <span class="img-card__score">7.5</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Grey's Anatomy">Grey's Anatomy</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="Grey's Anatomy">Grey's Anatomy</a>
             </div>
           </div>
           <div>
@@ -210,7 +219,7 @@
                 <img src="img/post/gossip-girl-2021.jpg" alt="پوستر سریال" class="img-card__picture">
                 <span class="img-card__score">5.3</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Gossip Girl">Gossip Girl</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="Gossip Girl">Gossip Girl</a>
             </div>
           </div>
           <div>
@@ -219,10 +228,68 @@
                 <img src="img/post/animal-kingdom-2016.jpg" alt="پوستر سریال" class="img-card__picture">
                 <span class="img-card__score">8.2</span>
               </a>
-              <a href="#" class="img-card__name prime-link prime-link--medium" title="Animal Kingdom">Animal Kingdom</a>
+              <a href="#" class="img-card__name prime-link prime-link--white prime-link--medium" title="Animal Kingdom">Animal Kingdom</a>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="heading-primary section__heading">
+        جدیدترین فیلم ها
+      </h2>
+      <div class="cards-container">
+        <article class="card">
+          <div class="card__img-box">
+            <img src="img/post/mud-2012.jpg" alt="دانلود فیلم Mud 2012" class="card__img">
+          </div>
+          <h2 class="card__title-heading">
+            <a href="" class="prime-link prime-link--white">دانلود فیلم Mud 2012</a>
+          </h2>
+          <div class="card__details-box">
+            <div class="card__genre-box">
+              <a href="" class="card__genre">درام</a>
+            </div>
+            <ul class="card__details-list">
+              <li class="card__details-item card__details-item-icon-box">
+                <i class="fas fa-flag card__details-item-icon"></i>
+                <a href="" class="prime-link prime-link--white-gray">ایالات متحده آمریکا</a>
+              </li>
+              <li class="card__details-item card__details-item-icon-box">
+                <i class="fab fa-imdb card__details-item-icon card__details-item-icon--large"></i>
+                <span>10 / 7.5</span>
+              </li>
+              <li class="card__details-item card__details-item-icon-box">
+                <i class="fas fa-clock card__details-item-icon"></i>
+                <span>2 ساعت و 10 دقیقه</span>
+              </li>
+              <li class="card__details-item">
+                <span class="card__item-title">کارگردان: </span>
+                <a href="" class="prime-link prime-link--white-gray">Jeff Nichols</a>
+              </li>
+              <li class="card__details-item">
+                <span class="card__item-title">هنرپیشگان: </span>
+                <a href="" class="prime-link prime-link--white-gray">Paul Sparks</a> , 
+                <a href="" class="prime-link prime-link--white-gray">Sarah Paulson</a> , 
+                <a href="" class="prime-link prime-link--white-gray">Michael Shannon</a>
+              </li>
+            </ul>
+            <div class="card__post-status-box">
+              <span class="card__post-status card__post-status--unavailable"><i class="fas fa-times card__post-status-icon"></i>دوبله</span>
+              <span class="card__post-status card__post-status--available"><i class="fas fa-check card__post-status-icon"></i>زیرنویس</span>
+            </div>
+            <p class="card__synopsis">
+              <span class="card__synopsis-title">خلاصه داستان: </span>
+              دو نوجوان در برخورد با یک زندانی فراری تصمیم می گیرند تا او را از دست پلیس و جایزه بگیر ها فراری دهند و به
+              او کمک کنند تا به عشق اش برسد…
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__watch-list-btn" title="افزودن به لیست تماشا"><i class="far fa-bookmark"></i></button>
+            <a href="" class="card__read-more-btn" title="ادامه مطلب و دانلود"><i class="fas fa-arrow-left"></i></a>
+          </div>
+        </article>
       </div>
     </section>
   </main>

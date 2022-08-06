@@ -2,6 +2,11 @@
 // @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "vendors/fontawesome/fontawesome.scss";
+@import "vendors/fontawesome/solid.scss";
+@import "vendors/fontawesome/brands.scss";
+@import "vendors/fontawesome/regular.scss";
+
 // @import "base/animations";
 @import "base/base";
 @import "base/fonts";
@@ -14,7 +19,8 @@
 @import "components/prime-link";
 @import "components/slider";
 @import "components/side-menu";
-// @import "components/card";
+@import "components/card";
+@import "components/mini-card";
 // @import "components/composition";
 // @import "components/feature-box";
 // @import "components/form";
@@ -24,7 +30,7 @@
 // @import "layout/footer";
 // @import "layout/grid";
 @import "layout/header";
-@import "layout/slider-section";
+@import "layout/section";
 // @import "layout/navigation";
 
 // @import "pages/home";

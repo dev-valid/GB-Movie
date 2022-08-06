@@ -1,0 +1,12 @@
+.section {
+  margin-top: 10rem;
+
+  &__heading {
+    margin: 0 1.6rem;
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}

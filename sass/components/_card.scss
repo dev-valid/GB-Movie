@@ -1,0 +1,148 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-3;
+  border-radius: .8rem;
+  width: 90%;
+  margin: 4rem 0;
+  padding: 2rem 1.4rem;
+
+  &__img-box {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    width: 20rem;
+    height: 30rem;
+    border-radius: .8rem;
+  }
+
+  &__title-heading {
+    font-size: 1.8rem;
+    font-weight: normal;
+  }
+
+  &__genre-box {
+    display: flex;
+    flex-flow: wrap row;
+    margin-top: 2rem;
+  }
+
+  &__genre {
+    margin: .4rem 0;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 1.7rem;
+    color: $color-2;
+    background-color: $bg-color-3;
+  }
+
+  &__details-list {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+
+  &__details-item {
+    margin: 1.3rem 0;
+
+    &-icon-box {
+      display: flex;
+      align-items: center;
+    }
+
+    &-icon {
+      color: $bg-color-3;
+      font-size: 2.8rem;
+      margin-left: .6rem;
+
+      &--large {
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  &__item-title {
+    font-size: 1.3rem;
+    color: $text-color-4;
+  }
+
+  &__post-status-box {
+    display: flex;
+    flex-direction: row;
+    margin: 1.3rem 0;
+  }
+
+  &__post-status {
+    margin: 0 .4rem;
+    padding: .4rem;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    color: $color-white;
+
+    &-icon {
+      margin-left: .4rem;
+    }
+
+    &--available {
+      background-color: #827717;
+    }
+
+    &--unavailable {
+      background-color: #b71c1c;
+    }
+  }
+
+  &__synopsis {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 1.3rem 0;
+
+    &-title {
+      font-size: 1.3rem;
+      color: $text-color-4;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 92%;
+  }
+
+  &__watch-list-btn {
+    margin-left: 1rem;
+    padding: 1.4rem 3.2rem;
+    border-radius: 1.8rem;
+    background-color: $bg-color-3;
+    color: $color-black;
+    border: none;
+    outline: none;
+
+    &:hover {
+      color: $color-white;
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 2.0rem;
+    }
+  }
+
+  &__read-more-btn {
+    i {
+      padding: 1.4rem 3.2rem;
+      border-radius: 1.8rem;
+      color: $color-white;
+      background-color: $bg-color-4;
+      font-size: 2rem;
+
+      &:hover {
+        color: $color-2;
+      }
+    }
+  }
+}

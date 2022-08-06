@@ -5,12 +5,12 @@ const searchForm = document.getElementById('search-form');
 searchBtn.addEventListener('click', () => {
   if (searchForm.classList.contains('header__search-form--open')) {
     searchForm.classList.remove('header__search-form--open');
-    searchBtn.classList.remove('fa-xmark');
-    searchBtn.classList.add('fa-magnifying-glass');
+    searchBtn.classList.remove('far','fa-times');
+    searchBtn.classList.add('fas','fa-search');
   } else {
     searchForm.classList.add('header__search-form--open');
-    searchBtn.classList.remove('fa-magnifying-glass');
-    searchBtn.classList.add('fa-xmark');
+    searchBtn.classList.remove('fas','fa-search');
+    searchBtn.classList.add('far','fa-times');
   }
 });
 
