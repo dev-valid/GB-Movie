@@ -7367,9 +7367,8 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #222e3a;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   width: 90%;
   margin: 4rem 0;
   padding: 2rem 1.4rem; }
@@ -7379,7 +7378,9 @@ body {
   .card__img {
     width: 20rem;
     height: 30rem;
-    border-radius: .8rem; }
+    border-radius: 0.8rem; }
+  .card__details-box {
+    margin-top: 1.4rem; }
   .card__title-heading {
     font-size: 1.8rem;
     font-weight: normal; }
@@ -7388,10 +7389,10 @@ body {
     flex-flow: wrap row;
     margin-top: 2rem; }
   .card__genre {
-    margin: .4rem 0;
+    margin: 0.4rem;
     padding: 0.5rem 1.2rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 1.7rem;
     color: #1d2733;
     background-color: #e89c31; }
@@ -7406,7 +7407,7 @@ body {
     .card__details-item-icon {
       color: #e89c31;
       font-size: 2.8rem;
-      margin-left: .6rem; }
+      margin-left: 0.6rem; }
       .card__details-item-icon--large {
         font-size: 3.5rem; }
   .card__item-title {
@@ -7417,21 +7418,20 @@ body {
     flex-direction: row;
     margin: 1.3rem 0; }
   .card__post-status {
-    margin: 0 .4rem;
-    padding: .4rem;
-    border-radius: .4rem;
+    margin: 0 0.4rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
     font-size: 1.5rem;
     color: #fff; }
     .card__post-status-icon {
-      margin-left: .4rem; }
+      margin-left: 0.4rem; }
     .card__post-status--available {
       background-color: #827717; }
     .card__post-status--unavailable {
       background-color: #b71c1c; }
   .card__synopsis {
     font-size: 1.4rem;
-    text-align: justify;
-    margin: 1.3rem 0; }
+    text-align: justify; }
     .card__synopsis-title {
       font-size: 1.3rem;
       color: #b6b4b4; }
@@ -7439,7 +7439,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 92%; }
+    margin-top: 2.4rem; }
   .card__watch-list-btn {
     margin-left: 1rem;
     padding: 1.4rem 3.2rem;
@@ -7452,7 +7452,7 @@ body {
       color: #fff;
       cursor: pointer; }
     .card__watch-list-btn i {
-      font-size: 2.0rem; }
+      font-size: 2rem; }
   .card__read-more-btn i {
     padding: 1.4rem 3.2rem;
     border-radius: 1.8rem;
@@ -7461,6 +7461,24 @@ body {
     font-size: 2rem; }
     .card__read-more-btn i:hover {
       color: #1d2733; }
+  @media only screen and (min-width: 480px) {
+    .card__post-status-row-layout {
+      display: flex;
+      flex-flow: nowrap row;
+      justify-content: space-between; }
+    .card__post-status-box {
+      flex-direction: column;
+      align-items: end;
+      margin-top: 40px;
+      min-width: 12.8rem; }
+    .card__post-status {
+      margin-bottom: 1rem; } }
+  @media only screen and (min-width: 680px) {
+    .card__img-row-layout {
+      display: flex;
+      flex-direction: row; }
+    .card__img-box {
+      margin: 2rem 0 0 2.4rem; } }
 
 .header {
   background-color: #273444;
@@ -7529,4 +7547,5 @@ body {
 
 .cards-container {
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center; }
