@@ -7219,6 +7219,9 @@ body {
 .u-margin-top-4 {
   margin-top: 4rem !important; }
 
+.u-margin-top-2 {
+  margin-top: 2rem !important; }
+
 .u-margin-bottom-4 {
   margin-bottom: 4rem !important; }
 
@@ -7483,6 +7486,48 @@ body {
     .card__img-box {
       margin: 2rem 0 0 2.4rem; } }
 
+.mini-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #222e3a;
+  border-radius: .8rem;
+  width: 90%;
+  margin-top: 2.8rem; }
+  .mini-card__img-box {
+    margin: .8rem; }
+  .mini-card__img {
+    width: 9rem;
+    height: 13rem;
+    border-radius: .8rem; }
+  .mini-card__detail {
+    display: flex;
+    flex-direction: column; }
+  .mini-card__title {
+    font-size: 1.8rem;
+    margin-left: 1rem; }
+  .mini-card__notif {
+    font-size: 1.3rem;
+    margin-top: 1.6rem;
+    margin-left: .2rem; }
+    .mini-card__notif i {
+      margin-left: .4rem; }
+
+.mini-card-row-layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+@media only screen and (min-width: 680px) {
+  .mini-card-row-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%; }
+  .mini-card {
+    width: 46%; } }
+
 .pagination {
   list-style: none;
   display: flex;
@@ -7504,6 +7549,23 @@ body {
       color: #f5cd07; }
     .pagination__link--active {
       background-color: #274d72; }
+
+.genre-btn {
+  width: 44%; }
+  .genre-btn__link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0.8rem 1.6rem;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 1.4rem;
+    border-radius: .8rem; }
+
+.genre-btn-row-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem .2rem; }
 
 .header {
   background-color: #273444;

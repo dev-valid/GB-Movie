@@ -1,0 +1,59 @@
+.mini-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: $color-3;
+  border-radius: .8rem;
+  width: 90%;
+  margin-top: 2.8rem;
+
+  &__img-box {
+    margin: .8rem;
+  }
+
+  &__img {
+    width: 9rem;
+    height: 13rem;
+    border-radius: .8rem;
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+
+  &__notif {
+    font-size: 1.3rem;
+    margin-top: 1.6rem;
+    margin-left: .2rem;
+
+    i {
+      margin-left: .4rem;
+    }
+  }
+}
+
+.mini-card-row-layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 680px) {
+  .mini-card-row-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+  }
+
+  .mini-card {
+    width: 46%;
+  }
+}

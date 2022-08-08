@@ -1,0 +1,20 @@
+.genre-btn {
+  width: 44%;
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    display: block;
+    padding: 0.8rem 1.6rem;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 1.4rem;
+    border-radius: .8rem;
+  }
+}
+
+.genre-btn-row-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem .2rem;
+}
