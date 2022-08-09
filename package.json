@@ -4,8 +4,8 @@
   "description": "landing page for tourland",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "serve": "live-server",
+    "ws": "node-sass sass/main.scss css/style.css -w",
+    "s": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",

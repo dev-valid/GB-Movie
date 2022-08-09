@@ -1,6 +1,6 @@
 // functionality to open and close search box
-const searchBtn = document.getElementById('search-btn');
-const searchForm = document.getElementById('search-form');
+const searchBtn = document.querySelector('.search-btn');
+const searchForm = document.querySelector('.header__search-form');
 
 searchBtn.addEventListener('click', () => {
   if (searchForm.classList.contains('header__search-form--open')) {
@@ -16,7 +16,7 @@ searchBtn.addEventListener('click', () => {
 
 // functionality to open and close side menu
 const menu = document.querySelector('.side-menu');
-const menuBtn = document.getElementById('menu-btn');
+const menuBtn = document.querySelector('.menu-btn');
 const menuOverly = document.querySelector('.side-menu-overly');
 const body = document.querySelector('body');
 

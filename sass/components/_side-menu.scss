@@ -17,10 +17,6 @@
     transform: translate(0);
   }
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
   &__login-btn-box {
     display: flex;
     justify-content: center;
@@ -48,10 +44,6 @@
   &__list {
     list-style-type: none;
   }
-
-  // &__item {
-    
-  // }
 
   &__link {
     padding: 1rem;

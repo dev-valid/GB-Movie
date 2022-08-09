@@ -17,9 +17,9 @@
   &__text {
     color: $color-white;
     font-size: 1.8rem;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
     position: relative;
-    top: .2rem;
+    top: 0.2rem;
     text-decoration: none;
   }
 
@@ -40,7 +40,7 @@
     position: fixed;
     left: 6rem;
     transform: translateX(-2rem);
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   &__search-form--open {
@@ -48,7 +48,7 @@
     opacity: 1 !important;
     transform: translateX(0) !important;
     visibility: visible !important;
-    transition: all .3s !important;
+    transition: all 0.3s !important;
   }
 
   &__search-input {
@@ -59,7 +59,7 @@
     color: $text-color-1;
     background-color: $bg-color-1;
     width: 80%;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   &__search-input-btn {
@@ -70,5 +70,25 @@
     color: $color-white;
     border: none;
     cursor: pointer;
+  }
+
+  @media only screen and (min-width: 500px) {
+    &__search-form {
+      background-color: $bg-color-1;
+      display: flex;
+      height: 4rem;
+      border-radius: 1.8rem;
+      overflow: hidden;
+      padding: 0.25rem;
+      position: fixed;
+      left: 3rem;
+      width: 30rem !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+
+    .search-btn {
+      display: none;
+    }
   }
 }

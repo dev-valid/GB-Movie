@@ -1,0 +1,17 @@
+@media only screen and (min-width: 900px) {
+  .sidebar-layout {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+
+    .section {
+      flex: 70%;
+      margin: 10rem 1rem;
+    }
+
+    .sidebar {
+      flex: 30%;
+    }
+  }
+}
+
