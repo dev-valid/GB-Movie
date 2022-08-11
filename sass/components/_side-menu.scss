@@ -15,10 +15,8 @@
     transform: translate(0);
   }
 
-  @media only screen and (hover: none) {
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
   }
 
   &__login-btn-box {

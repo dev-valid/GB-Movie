@@ -7321,9 +7321,8 @@ body {
   transform: translate(100%); }
   .side-menu--show {
     transform: translate(0); }
-  @media only screen and (hover: none) {
-    .side-menu::-webkit-scrollbar {
-      display: none; } }
+  .side-menu::-webkit-scrollbar {
+    display: none; }
   .side-menu__login-btn-box {
     display: flex;
     justify-content: center;
@@ -7761,6 +7760,8 @@ body {
   .side-menu {
     grid-area: nav;
     transform: translate(0); }
+  ::-webkit-scrollbar {
+    display: block; }
   .main {
     width: 100%;
     grid-area: main; }
