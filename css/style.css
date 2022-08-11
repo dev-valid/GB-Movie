@@ -7321,7 +7321,7 @@ body {
   transform: translate(100%); }
   .side-menu--show {
     transform: translate(0); }
-  @media (hover: none) {
+  @media only screen and (hover: none) {
     .side-menu::-webkit-scrollbar {
       display: none; } }
   .side-menu__login-btn-box {

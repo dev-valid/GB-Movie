@@ -15,7 +15,7 @@
     transform: translate(0);
   }
 
-  @media (hover: none) {
+  @media only screen and (hover: none) {
     &::-webkit-scrollbar {
       display: none;
     }
