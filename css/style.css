@@ -7314,7 +7314,7 @@ body {
   overflow-y: auto;
   height: 100%;
   max-width: 86vw;
-  width: 28rem;
+  width: 26rem;
   background-color: #1d2733;
   padding: 2.5rem 1rem;
   transition: all 0.3s linear;
@@ -7385,7 +7385,8 @@ body {
     height: 30rem;
     border-radius: 0.8rem; }
   .card__details-box {
-    margin-top: 1.4rem; }
+    margin-top: 1.4rem;
+    width: 100%; }
   .card__title-heading {
     font-size: 1.8rem;
     font-weight: normal; }
@@ -7748,8 +7749,7 @@ body {
   .side-menu-layout {
     display: grid;
     grid-template-areas: "nav header header header" "nav main main main" "nav footer footer footer";
-    grid-template-columns: 0.72fr 1fr 1fr 1fr;
-    grid-column-gap: 8rem;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
     height: 100vh; }
   .header {
     grid-area: header; }
