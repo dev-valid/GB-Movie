@@ -22,10 +22,6 @@
     transform: translate(0);
   }
 
-  &::-webkit-scrollbar {
-    display: block;
-  }
-
   .main {
     width: 100%;
     grid-area: main;
