@@ -15,6 +15,12 @@
     transform: translate(0);
   }
 
+  @media (hover: none) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
   &__login-btn-box {
     display: flex;
     justify-content: center;
