@@ -10,8 +10,6 @@
   padding: 2.5rem 1rem;
   transition: all 0.3s linear;
   transform: translate(100%);
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 
   &--show {
     transform: translate(0);

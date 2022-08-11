@@ -28,12 +28,12 @@ menuBtn.addEventListener('click', () => {
   // background fade animation 
   let op = 0;
   let id;
-  id = setInterval(animated,1)
+  id = setInterval(animated,30)
   function animated () {
-    if (op >= 0.85) {
+    if (op >= 0.75) {
       clearInterval(id)
     } else {
-      op += .01;
+      op += .1;
       menuOverly.style.backgroundColor = `rgba(6, 6, 6, ${op})`;
     }
   }
@@ -44,15 +44,16 @@ menuOverly.addEventListener('click', () => {
   body.removeAttribute('style');
 
   // background fade animation
-  let op = 0.85;
+  let op = 0.75;
   let id;
-  id = setInterval(animated,1)
+  id = setInterval(animated,30)
   function animated () {
-    if (op <= 0.01) {
+    if (op <= 0.1) {
       clearInterval(id)
+      menuOverly.style.backgroundColor = 'rgba(6, 6, 6, 0)';
       menuOverly.style.display = 'none';
     } else {
-      op -= .01;
+      op -= .1;
       menuOverly.style.backgroundColor = `rgba(6, 6, 6, ${op})`;
     }
   }

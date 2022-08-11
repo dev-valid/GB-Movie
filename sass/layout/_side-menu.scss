@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1200px) {
+  .side-menu-layout {
+    display: grid;
+      grid-template-areas:
+          "nav header header header"
+          "nav main main main"
+          "nav footer footer footer";
+      grid-template-columns: 0.72fr 1fr 1fr 1fr;
+      grid-column-gap: 8rem;
+      height: 100vh;
+  }
+  
+  .header {
+    grid-area: header;
+    
+    &__menu-btn-box {
+      margin: 1.2rem 30rem 1.2rem 1.2rem;
+    }
+  }
+
+  .side-menu {
+    grid-area: nav;
+    transform: translate(0);
+  }
+
+  .main {
+    width: 100%;
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
