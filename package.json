@@ -1,11 +1,11 @@
 {
-  "name": "tourland",
+  "name": "gb-movie",
   "version": "1.0.0",
-  "description": "landing page for tourland",
+  "description": "movie website template",
   "main": "index.js",
   "scripts": {
-    "ws": "node-sass sass/main.scss css/style.css -w",
-    "s": "live-server",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
